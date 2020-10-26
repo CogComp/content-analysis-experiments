@@ -1,0 +1,2 @@
+This repository will contain the code to reproduce the experiments from [Understanding the Extent to which Summarization Evaluation Metrics Measure the Information Quality of Summaries](https://arxiv.org/abs/2010.12495).
+The experiment code is not ready to be released yet, but if you would like to calculate the category-specific variants of ROUGE, please see [here](https://github.com/danieldeutsch/sacrerouge/blob/master/doc/metrics/decomposed-rouge.md).
