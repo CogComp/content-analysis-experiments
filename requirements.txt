@@ -1,0 +1,13 @@
+googledrivedownloader
+numpy
+requests
+overrides
+scipy
+jsons
+lxml
+nltk
+spacy==2.1.0
+torch==1.4.0
+transformers==2.8.0
+git+git://github.com/danieldeutsch/bert_score_content_analysis
+networkx

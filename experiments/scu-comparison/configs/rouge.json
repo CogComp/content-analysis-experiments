@@ -1,0 +1,14 @@
+{
+  "dataset_reader": {
+    "type": "pyramid-based"
+  },
+  "metrics": [
+    {
+      "type": "pyramid-comparison",
+      "name": "rouge",
+      "backend": {
+        "type": "rouge-pyramid-backend"
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "dataset_reader": {
+    "type": "reference-based"
+  },
+  "metrics": [
+    {
+      "type": "interpretable-rouge",
+      "name": "rouge",
+      "backend": {
+        "type": "rouge-backend"
+      },
+      "pretokenized_text": true,
+      "matchers": [
+        {
+          "type": "ner",
+          "name": "ner",
+          "tag_sets": [
+            ["PERSON"],
+            ["NORP", "ORG"],
+            ["GPE", "LOC"]
+          ]
+        },
+        { "type": "pos", "name": "pos-adj", "tags": ["ADJ"] },
+        { "type": "pos", "name": "pos-verb", "tags": ["VERB"] },
+        { "type": "pos", "name": "pos-noun", "tags": ["NOUN"] },
+        { "type": "pos", "name": "pos-propn", "tags": ["PROPN"] },
+        { "type": "pos", "name": "pos-adv", "tags": ["ADV"] },
+        { "type": "pos", "name": "pos-num", "tags": ["NUM"] },
+        { "type": "dependency", "name": "dep-root", "relations": ["ROOT"] },
+        { "type": "dependency", "name": "dep-nsubj", "relations": ["nsubj"] },
+        { "type": "dependency", "name": "dep-dobj", "relations": ["dobj"] },
+        { "type": "stopwords", "name": "stopwords" },
+        { "type": "phrasal", "name": "np-chunks" },
+        { "type": "dependency-verb-relations", "name":  "dep-pair-subj", "relations":  ["nsubj"] },
+        { "type": "dependency-verb-relations", "name":  "dep-pair-obj", "relations":  ["dobj"] },
+        { "type": "dependency-verb-relations", "name": "dep-trip-subj-obj", "relations": ["nsubj", "dobj"] }
+      ]
+    }
+  ]
+}

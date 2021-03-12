@@ -1,0 +1,14 @@
+{
+  "dataset_reader": {
+    "type": "pyramid-based"
+  },
+  "metrics": [
+    {
+      "type": "pyramid-comparison",
+      "name": "bertscore",
+      "backend": {
+        "type": "bertscore-pyramid-backend"
+      }
+    }
+  ]
+}
