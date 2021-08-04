@@ -1,7 +1,7 @@
 This repository contains the code to reproduce the results from [Understanding the Extent to which Summarization Evaluation Metrics Measure the Information Quality of Summaries](https://arxiv.org/abs/2010.12495).
 The code is based on an early version of the [SacreROUGE](https://github.com/danieldeutsch/sacrerouge) library, which has changed somewhat significantly since.
 The version of ROUGE which was decomposed into different parts based on POS, dependency labels, etc., has also been included in SacreROUGE.
-See [here](https://github.com/danieldeutsch/sacrerouge/blob/master/doc/metrics/decomposed-rouge.md).
+See [here](https://github.com/danieldeutsch/decomposed-rouge).
 
 ## Environment
 First, run these commands to set up the environment:
